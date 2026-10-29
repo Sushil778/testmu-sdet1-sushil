@@ -6,8 +6,7 @@ integration that produces an explanation, likely cause and suggested
 fix from supplied test-failure evidence.
 
 ## Quick review guide
-
-Reviewers can start here: 
+ 
 1. `prompts.md` --- raw prompts used for Task2.
 2. `docs/` --- generated test cases, initial drafts, improved
 versions, and sample LLM output. 
@@ -33,10 +32,7 @@ TestMU-SDET/
 │   ├── dashboard-test-cases-improved.md
 │   ├── llm-sample-output.md
 │   ├── login-test-cases-initial.md
-should create their own local `.env` and provide their own Gemini API
-key. Your private key should never be shared with the reviewer. For test
-credentials, use safe public demo credentials or have the reviewer
-configure their own test account.│   └── login-test-cases-improved.md
+│   └── login-test-cases-improved.md
 ├── src/
 │   ├── llm/
 │   │   ├── failureExplainer.ts            # Gemini integration
