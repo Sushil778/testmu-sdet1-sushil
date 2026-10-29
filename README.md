@@ -6,18 +6,14 @@ integration that produces an explanation, likely cause and suggested
 fix from supplied test-failure evidence.
 
 ## Quick review guide
- 
-1. `prompts.md` --- raw prompts used for Task2.
-2. `docs/` --- generated test cases, initial drafts, improved
-versions, and sample LLM output. 
-3. `src/llm/failureExplainer.ts` --- Gemini API call, prompt, JSON parsing and
-response validation.
-4.`src/llm/failureExplainerFixture.ts` --- Playwright fixture for
-collecting failure details and attaching the explanation. 
-5.`src/llm/failureExplainerReporter.ts` --- reporter implementation.
-6.`tests/llm/sauceDemoLogin.spec.ts` --- primary end-to-end demonstration.
-7. `ai-usage-log.md` --- AI tools used, tasks supported, and outputs
-produced.
+
+1. `prompts.md` — Raw prompts used for Task 2.
+2. `docs/` — Generated test cases, initial drafts, improved versions, and sample LLM output.
+3. `src/llm/failureExplainer.ts` — Gemini API call, prompt, JSON parsing, and response validation.
+4. `src/llm/failureExplainerFixture.ts` — Playwright fixture for collecting failure details and attaching the explanation.
+5. `src/llm/failureExplainerReporter.ts` — Reporter implementation.
+6. `tests/llm/sauceDemoLogin.spec.ts` — Primary end-to-end demonstration.
+7. `ai-usage-log.md` — AI tools used, tasks supported, and outputs produced.
 
 
 
