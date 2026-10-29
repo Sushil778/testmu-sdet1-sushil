@@ -10,7 +10,8 @@ fix from supplied test-failure evidence.
 1. `prompts.md` --- raw prompts used for Task2.
 2. `docs/` --- generated test cases, initial drafts, improved
 versions, and sample LLM output. 
-3. `src/llm/failureExplainer.ts` --- Gemini API call, prompt, JSON parsing and response validation.
+3. `src/llm/failureExplainer.ts` --- Gemini API call, prompt, JSON parsing and
+response validation.
 4.`src/llm/failureExplainerFixture.ts` --- Playwright fixture for
 collecting failure details and attaching the explanation. 
 5.`src/llm/failureExplainerReporter.ts` --- reporter implementation.
