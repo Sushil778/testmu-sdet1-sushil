@@ -1,4 +1,4 @@
-## Feature: Dashboard Widget Loading
+Feature: Dashboard Widget Loading
 
   Scenario: Verify that dashboard widgets load successfully
     Given the user is authenticated and authorized to access the Dashboard
@@ -38,7 +38,7 @@
     And unavailable data should not be presented as verified current data
     And the application should remain usable to the extent supported by its design.
 
-## Feature: Dashboard Data Accuracy
+Feature: Dashboard Data Accuracy
 
   Scenario: Verify dashboard values against the source data
     Given the user is authorized to access the Dashboard
@@ -89,7 +89,7 @@
     Then the application should handle the records according to its defined data validation rules
     And the Dashboard should not silently present incorrect calculations as accurate
 
-## Feature: Dashboard Filters and Sorting
+Feature: Dashboard Filters and Sorting
 
   Scenario: Verify that an available filter returns matching data
     Given the user is authorized to access the Dashboard
@@ -171,7 +171,7 @@
     Then the application should handle the invalid input according to its validation rules
     And invalid input should not cause incorrect results or an unhandled application error
 
-## Feature: Dashboard Responsive Layout
+Feature: Dashboard Responsive Layout
 
   Scenario: Verify dashboard layout on a large screen
     Given the user is authorized to access the Dashboard
@@ -225,7 +225,7 @@
     And the content should not unintentionally overlap adjacent widgets
     And available widget controls should remain accessible
 
-## Feature: Dashboard Permissions and Data Visibility
+Feature: Dashboard Permissions and Data Visibility
 
   Scenario: Verify dashboard access for an authorized user
     Given the user has permission to access the Dashboard

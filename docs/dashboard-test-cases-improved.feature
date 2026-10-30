@@ -1,4 +1,4 @@
-## Feature: Dashboard Widget Loading
+Feature: Dashboard Widget Loading
 
   Scenario: Verify that all permitted dashboard widgets load successfully
     Given the user is authenticated and authorized to access the Dashboard
@@ -30,7 +30,7 @@
     And the loading state should no longer be displayed for that completed request
 
 
-## Feature: Dashboard Data Accuracy
+Feature: Dashboard Data Accuracy
 
   Scenario: Verify displayed values against the source data
     Given the user is authorized to view a dashboard widget
@@ -139,7 +139,7 @@
     And the displayed counts should match the filtered dataset
 
 
-## Feature: Dashboard Responsive Layout
+Feature: Dashboard Responsive Layout
 
   Scenario: Verify dashboard layout on supported screen sizes
     Given the user is authorized to access the Dashboard
@@ -173,7 +173,7 @@
     And required widget controls should remain accessible
     And the content should not unintentionally overlap adjacent widgets
 
-## Feature: Dashboard Permission-Based Visibility
+Feature: Dashboard Permission-Based Visibility
 
   Scenario: Verify dashboard access for an authorized user
     Given the user has permission to access the Dashboard

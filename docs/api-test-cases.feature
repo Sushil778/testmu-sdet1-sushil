@@ -1,4 +1,4 @@
-## Feature: REST API Authentication Token Validation
+Feature: REST API Authentication Token Validation
 
   Scenario: Accept a valid token with sufficient permissions
     Given a valid authentication token is available
@@ -44,7 +44,7 @@
     And the response should follow the documented error contract
     And sensitive authentication details should not be disclosed
 
-  ## Feature: REST API CRUD Operations
+Feature: REST API CRUD Operations
 
   Scenario: Create a resource successfully
     Given the client is authenticated and authorized to create the resource
@@ -122,7 +122,7 @@
     And no unrelated resource should be deleted
     And the resource collection should remain consistent with the documented deletion behavior
 
-  ## Feature: REST API HTTP Error Handling
+Feature: REST API HTTP Error Handling
 
   Scenario: Handle a request using an unsupported HTTP method
     Given the client can access the API resource
@@ -172,7 +172,7 @@
     And the resulting resource state should match the documented operation semantics
     And the retry should not cause unintended duplicate changes
 
-  ## Feature: REST API Rate Limiting
+Feature: REST API Rate Limiting
 
   Scenario: Process requests within the documented rate limit
     Given the applicable rate limit and measurement window are documented
@@ -211,7 +211,7 @@
     Then each required rate-limit metadata field should be present
     And each returned value should conform to the documented type and meaning
 
-  ## Feature: REST API Request and Response Schema Validation
+Feature: REST API Request and Response Schema Validation
 
   Scenario: Accept a request that conforms to the documented schema
     Given the request schema defines the required fields and accepted value types
@@ -284,7 +284,7 @@
     And required error fields should be present with the correct types
     And internal implementation details should not be exposed
 
-  ## Feature: REST API Request and Response Schema Validation
+Feature: REST API Request and Response Schema Validation
 
   Scenario: Accept a request that conforms to the documented schema
     Given the request schema defines the required fields and accepted value types

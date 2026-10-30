@@ -1,4 +1,4 @@
-## Feature: REST API Authentication Token Validation
+Feature: REST API Authentication Token Validation
 
   Scenario: Verify API access with a valid authentication token
     Given a valid authentication token has been issued according to the API authentication requirements
@@ -40,7 +40,7 @@
     And the operation should not modify protected resources
     And protected information should not be disclosed beyond the permitted response
 
-## Feature: REST API CRUD Operations
+Feature: REST API CRUD Operations
 
   Scenario: Verify successful resource creation
     Given the client has valid authentication and the required permissions
@@ -119,7 +119,7 @@
     Then the API should deny the operation according to its authorization rules
     And the protected resource should not be changed by a denied operation
 
-## Feature: REST API HTTP Error Handling
+Feature: REST API HTTP Error Handling
 
   Scenario: Verify handling of a malformed request
     Given the client has access to the API
@@ -176,7 +176,7 @@
     And the resulting response should follow the documented contract
     And the retry should not cause unintended duplicate or repeated changes
 
-## Feature: REST API Rate Limiting
+Feature: REST API Rate Limiting
 
   Scenario: Verify requests within the permitted rate limit
     Given the API's rate limit and measurement window are documented
@@ -221,7 +221,7 @@
     Then the API should follow its documented rate-limit behavior
     And the resource should not reflect a modification that the API rejected
 
-## Feature: REST API Schema Validation
+Feature: REST API Schema Validation
 
   Scenario: Verify a valid request conforms to the API schema
     Given the API request schema is documented
